@@ -1,3 +1,5 @@
+![icon 2x](https://user-images.githubusercontent.com/87758/45265646-3967fb80-b41c-11e8-940a-340a4a8d9a03.png)
+
 # Custom Fork additions
 
 I've forked this because the Firefox dev team seems to have abandoned theirs. (only for now, we hope!) Check the latest commit date for currency.
