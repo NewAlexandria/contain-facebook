@@ -1,4 +1,5 @@
 /web-ext-artifacts
+/src/web-ext-artifacts/
 /node_modules
 /.nyc_output
 /coverage

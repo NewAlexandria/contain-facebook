@@ -9,8 +9,8 @@ I've forked this because the Firefox dev team seems to have abandoned theirs. (o
 
 #### Installation 
 
-1. You can install this add-on from the `.xpi` file included in thise
-2. Get it from the Firefox Add-on Site
+1. Get it from the Firefox Add-on Site
+2. You can install this add-on from the `.xpi` file included in this repo
 2. Or follow the instructions below:
 
 To use this plugin locally, you will need to build and load it manually into Firefox.  
