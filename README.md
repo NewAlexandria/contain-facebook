@@ -1,8 +1,10 @@
 ![icon 2x](https://user-images.githubusercontent.com/87758/45265646-3967fb80-b41c-11e8-940a-340a4a8d9a03.png)
 
-# Custom Fork additions
+# Facebook Container - Expanded
 
 I've forked this because the Firefox dev team seems to have abandoned theirs. (only for now, we hope!) Check the latest commit date for currency.
+
+> :gear: install it directly [as a Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/facebook-container-newalexndra/)
 
 #### Additions:
 
@@ -11,7 +13,7 @@ I've forked this because the Firefox dev team seems to have abandoned theirs. (o
 
 #### Installation 
 
-1. Get it from the Firefox Add-on Site
+1. [Get it from the Firefox Add-on Site](https://addons.mozilla.org/en-US/firefox/addon/facebook-container-newalexndra/)
 2. You can install this add-on from the `.xpi` file included in this repo
 2. Or follow the instructions below:
 
