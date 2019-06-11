@@ -1,13 +1,13 @@
 {
     "manifest_version": 2,
     "name": "Facebook Container NewAlexandria",
-    "version": "1.5.2",
+    "version": "2.1",
 
-    "description": "This forked Facebook Container isolates a more-comprehensive list of Facebook domains.  It will be kept updated and live until the MOzilla team gets back around to maintaining their version of this add-on. This add-on isolates Facebook + subsidiary activity from the rest of your web activity, in order to prevent Facebook from tracking you outside of the Facebook network.",
+    "description": "This forked Facebook Container isolates a more-comprehensive list of Facebook domains.  It will be kept updated and live until the Mozilla team gets back around to maintaining their version of this add-on. This add-on isolates Facebook + subsidiary activity from the rest of your web activity, in order to prevent Facebook from tracking you outside of the Facebook network.",
 
     "icons": {
-        "48": "icon.png",
-        "96": "icon@2x.png"
+        "48": "/img/icon.svg",
+        "96": "/img/icon.svg"
     },
 
     "applications": {
@@ -18,6 +18,25 @@
     },
 
     "homepage_url": "https://github.com/NewAlexandria/contain-facebook",
+
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "/img/fbc-icon2.svg",
+        "default_title": "Facebook Container",
+        "default_popup": "panel.html",
+        "theme_icons": [
+            {
+                "light": "/img/fbc-icon.svg",
+                "dark": "/img/fbc-icon2.svg",
+                "size": 16
+            },
+            {
+                "light": "/img/fbc-icon.svg",
+                "dark": "/img/fbc-icon2.svg",
+                "size": 32
+            }
+        ]
+    },
 
     "permissions": [
         "<all_urls>",
@@ -33,5 +52,13 @@
 
     "background": {
         "scripts": ["background.js"]
-    }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content_script.js"],
+            "css": ["content_script.css"]
+        }
+    ]
 }

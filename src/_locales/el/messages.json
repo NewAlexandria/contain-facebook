@@ -1,0 +1,133 @@
+{
+  "extensionDescription": {
+    "message": "Το Facebook Container απομονώνει τη δραστηριότητά σας στο Facebook από την υπόλοιπη δραστηριότητά σας στο διαδίκτυο, προκειμένου να εμποδίσετε την καταγραφή σας από το Facebook εκτός της ιστοσελίδας του Facebook, μέσω cookies τρίτων.", 
+    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "in-fbc-subhead": {
+    "message": "Το $URL$ είναι στο Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.facebook.com"
+      }
+    }
+  }, 
+  "in-fbc-p1": {
+    "message": "Το Facebook μπορεί πλέον να σας καταγράφει σε αυτή την ιστοσελίδα. Για να αφαιρέσετε αυτή την ιστοσελίδα από το Facebook Container, επιλέξτε το \"Επιτρεπόμενες ιστοσελίδες\" στο Facebook Container και αφαιρέστε την από τη λίστα."
+  }, 
+  "notOnFacebookHeader": {
+    "message": "Το $URL$ δεν είναι στο Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
+    "placeholders": {
+      "url": {
+        "content": "$1", 
+        "example": "www.google.com"
+      }
+    }
+  }, 
+  "notOnFacebookText": {
+    "message": "Η ιστοσελίδα είναι εκτός του Facebook Container. Έτσι, το Facebook σάς παρακολουθεί δυσκολότερα στο διαδίκτυο.", 
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "onUnknownSiteHeader": {
+    "message": "Αυτή η ιστοσελίδα δεν είναι στο Facebook Container.", 
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "facebookContainer": {
+    "message": "Facebook Container", 
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  }, 
+  "onboarding2-alt": {
+    "message": "Το εικονίδιο φράχτη του Facebook Container", 
+    "description": "This is alternative text for the icon in the second onboarding panel"
+  }, 
+  "onboarding3-subhead": {
+    "message": "Πώς ξέρω ότι το Facebook Container λειτουργεί;", 
+    "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Ωστόσο, αν κάνετε κλικ σε οποιοδήποτε από αυτά τα κουμπιά, το Facebook θα μπορεί να σας καταγράφει.", 
+    "description": "This is the second paragraph on the third onboarding panel."
+  }, 
+  "btn-allow": {
+    "message": "Αποδοχή", 
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+  }, 
+  "btn-cancel": {
+    "message": "Ακύρωση", 
+    "description": "This is a button to cancel out of the onboarding panel."
+  }, 
+  "btn-next": {
+    "message": "Επόμενο", 
+    "description": "This is a button to continue to the next onboarding panel."
+  }, 
+  "btn-back": {
+    "message": "Πίσω", 
+    "description": "This is a button that returns the user to the previous onboarding panel."
+  }, 
+  "btn-done": {
+    "message": "Τέλος", 
+    "description": "This is a button the user clicks to close out the panel when they have finished reading the text."
+  }, 
+  "btn-arrow-back": {
+    "message": "Επιστροφή στην προηγούμενη σελίδα.", 
+    "description": "This is alternative text for the back arrow button."
+  }, 
+  "btn-arrow-forward": {
+    "message": "Μετάβαση στο \"Πώς λειτουργεί το Facebook Container\"", 
+    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+  }, 
+  "no-trackers-subhead": {
+    "message": "Δεν ανιχνεύθηκαν ιχνηλάτες Facebook", 
+    "description": ""
+  }, 
+  "learn-more": {
+    "message": "Μάθετε περισσότερα", 
+    "description": "This is a link that opens a page with more information about Facebook Container."
+  }, 
+  "how-fbc-works": {
+    "message": "Πώς λειτουργεί το Facebook Container", 
+    "description": "This is a button that opens the Facebook Container onboarding flow."
+  }, 
+  "trackers-detected-subhead": {
+    "message": "Σας προστατεύουμε από το Facebook.", 
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-fence-alt": {
+    "message": "Φράχτης Facebook Container με ασπίδα.", 
+    "description": "This is alternative text describing the container fence icon."
+  }, 
+  "sites-added-subhead": {
+    "message": "Επιτρεπόμενες ιστοσελίδες στο Facebook Container", 
+    "description": "This is a panel subhead."
+  }, 
+  "sites-included": {
+    "message": "ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
+    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+  }, 
+  "no-sites-added": {
+    "message": "Καμία", 
+    "description": "This message is shown beneath the 'SITES YOU’VE ALLOWED' list header when no sites have been added to the contaner."
+  }, 
+  "sites-allowed": {
+    "message": "ΕΠΙΤΡΕΠΟΜΕΝΕΣ ΙΣΤΟΣΕΛΙΔΕΣ", 
+    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+  }, 
+  "remove": {
+    "message": "Αφαίρεση", 
+    "description": ""
+  }, 
+  "remove-site-subhead": {
+    "message": "Αφαίρεση ιστοσελίδας από το Facebook Container;", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p1": {
+    "message": "Να επιτρέπεται στο Facebook να σας καταγράφει εδώ;", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-checkbox": {
+    "message": "Να μην εμφανιστεί ξανά", 
+    "description": ""
+  }
+}
