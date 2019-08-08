@@ -1,3 +1,34 @@
+![icon 2x](https://user-images.githubusercontent.com/87758/45265646-3967fb80-b41c-11e8-940a-340a4a8d9a03.png)
+
+# Facebook Container - Expanded
+
+I've forked this because the Firefox dev team seems to have abandoned theirs. (only for now, we hope!) Check the latest commit date for currency.
+
+> :gear: install it directly [as a Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/facebook-container-newalexndra/)
+
+#### Additions:
+
+* many new domains, per [PRs against the source repo](https://github.com/mozilla/contain-facebook/pulls).
+
+
+#### Installation 
+
+1. [Get it from the Firefox Add-on Site](https://addons.mozilla.org/en-US/firefox/addon/facebook-container-newalexndra/)
+2. You can install this add-on from the `.xpi` file included in this repo
+2. Or follow the instructions below:
+
+To use this plugin locally, you will need to build and load it manually into Firefox.  
+
+1. be sure you are using the latest verstion of FF
+2. download this repo and build it
+3. visit `about:config` in your Firefox browser
+4. set `xpinstall.signatures.required` to `false`
+5. install fia the Extensions page
+
+Remember to be cautious of new extensions, and malicious sites that may try to auto-install them!
+
+-----
+
 # Facebook Container
 
 **Prevent Facebook from tracking your visits to other websites**
