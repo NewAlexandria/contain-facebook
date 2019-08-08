@@ -5,7 +5,7 @@ const FACEBOOK_CONTAINER_DETAILS = {
 };
 
 const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com",
+  "facebook.com", "facebook.net", "fb.com",
   "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
   "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
 
@@ -15,9 +15,9 @@ const FACEBOOK_DOMAINS = [
   "messenger.com", "m.me", "messengerdevelopers.com",
   "whatsapp.com", "whatsapp.net",
 
-  "workplace.com",
-
   "atdmt.com",
+
+  "workplace.com",
 
   "onavo.com",
   "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com"
@@ -277,6 +277,15 @@ function isFacebookURL (url) {
   return false;
 }
 
+// TODO: Consider users if accounts.spotify.com already in FBC
+async function supportSiteSubdomainCheck (url) {
+  if (url === "accounts.spotify.com") {
+    await addDomainToFacebookContainer("https://www.spotify.com");
+    await addDomainToFacebookContainer("https://open.spotify.com");
+  }
+  return;
+}
+
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
 // TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
 async function addDomainToFacebookContainer (url) {
@@ -284,6 +293,7 @@ async function addDomainToFacebookContainer (url) {
   const fbcStorage = await browser.storage.local.get();
   fbcStorage.domainsAddedToFacebookContainer.push(parsedUrl.host);
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  await supportSiteSubdomainCheck(parsedUrl.host);
 }
 
 async function removeDomainFromFacebookContainer (domain) {
@@ -293,6 +303,7 @@ async function removeDomainFromFacebookContainer (domain) {
   await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
 }
 
+// TODO: Add PSL Subdomain Check against current list
 async function isAddedToFacebookContainer (url) {
   const parsedUrl = new URL(url);
   const fbcStorage = await browser.storage.local.get();
@@ -420,6 +431,9 @@ async function areAllStringsTranslated () {
 */
 
 async function updateBrowserActionIcon (tab) {
+
+  browser.browserAction.setBadgeText({text: ""});
+
   if (tab.incognito) {
     browser.browserAction.disable(tab.id);
     return;
@@ -428,6 +442,8 @@ async function updateBrowserActionIcon (tab) {
   const url = tab.url;
   const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
 
+
+
   if (isFacebookURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
     // so the panel.js can "ask" background.js which panel it should show
@@ -435,11 +451,15 @@ async function updateBrowserActionIcon (tab) {
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
   } else if (hasBeenAddedToFacebookContainer) {
     browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
-  } else { 
+  } else {
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
     browser.storage.local.set({"CURRENT_PANEL": panelToShow});
     browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+    browser.browserAction.setBadgeBackgroundColor({color: "#6200A4"});
+    if ( panelToShow === "trackers-detected" ) {
+      browser.browserAction.setBadgeText({text: "!"});
+    }
   }
 }
 

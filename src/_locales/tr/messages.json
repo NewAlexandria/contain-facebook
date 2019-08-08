@@ -16,6 +16,18 @@
   "in-fbc-p1": {
     "message": "Facebook artık bu sitede sizi izleyebilir. Bu siteyi Facebook Container’dan kaldırmak isterseniz “Facebook Container’da izin verilen siteler”i seçip listeden silin."
   }, 
+  "on-facebook-subhead": {
+    "message": "Facebook Container kapsamındaki siteler hakkında", 
+    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p1": {
+    "message": "Facebook’a ait sitelere veya Facebook Container’a eklediğiniz sitelere girdiğinizde Firefox adres çubuğunda bu simge görünür.", 
+    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  }, 
+  "on-facebook-p2": {
+    "message": "Bu sitelerin çalışması için Facebook kimliğinize erişmeleri (veya kim olduğunuzu bilmeleri) gerekir. Ayrıca Facebook, bu sitelerde yaptığınız her şeyi takip edebilir.", 
+    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  }, 
   "notOnFacebookHeader": {
     "message": "$URL$ Facebook Container’da değil.", 
     "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".", 
@@ -42,13 +54,45 @@
     "message": "Facebook Container’ı kullanma", 
     "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
   }, 
+  "onboarding1-p1": {
+    "message": "Facebook, Facebook.com dışındaki sitelerde de gezintinizi takip edebilir. Örneğin herhangi bir sayfadaki Facebook Beğen ve Paylaş düğmeleri, o sayfayı hiç beğenmeseniz ve paylaşmasınız bile o sayfaya girdiğinizi Facebook'a bildirir.", 
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding1-p2": {
+    "message": "Facebook Container, Facebook siteleriyle diğer siteler arasına bir sınır çeker. Böylece Facebook’un internette sizi izlemesi zorlaşır.", 
+    "description": "Please do not translate \"Facebook Container\""
+  }, 
+  "onboarding2-subhead": {
+    "message": "Facebook Container kapsamındaki siteler hakkında", 
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding2-alt": {
     "message": "Facebook Container çit simgesi", 
     "description": "This is alternative text for the icon in the second onboarding panel"
   }, 
+  "onboarding2-p1": {
+    "message": "Facebook Container sınırları içinde bulunan Facebook.com gibi sitelere girdiğiniz Firefox adres çubuğunda bu simge belirir.", 
+    "description": "This is the first paragraph of the second onboarding panel."
+  }, 
+  "onboarding2-p2": {
+    "message": "Bu sitelerin çalışması için Facebook kimliğinize erişmeleri (veya kim olduğunuzu bilmeleri) gerekir. Ayrıca Facebook, bu sitelerde yaptığınız her şeyi takip edebilir.", 
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+  }, 
   "onboarding3-subhead": {
     "message": "Facebook Container’ın çalıştığını nasıl anlayabilirim?", 
     "description": "This is the subhead for the third onboarding panel."
+  }, 
+  "onboarding3-p1": {
+    "message": "Bir sayfayı Facebook'ta beğenmenizi, paylaşmanızı veya Facebook hesabınızla web sitelerine giriş yapmanızı sağlayan düğmeler “takipçi” içerir. Facebook Container bu takipçileri engeller ve takipçilerin engellendiği yerleri çit simgesiyle işaretler.", 
+    "description": "This is the first paragraph of the third onboarding panel."
+  }, 
+  "onboarding3-img": {
+    "message": "Bu örnek resimde, bir Facebook Beğen düğmesinin yanında Facebook Container’ın çit simgesinin göründüğünü görebilirsiniz.", 
+    "description": "This is alternative text for the image shown in the third onboarding panel."
+  }, 
+  "onboarding3-p2": {
+    "message": "Ama bu düğmelerden herhangi birine tıklarsanız Facebook sizi izleyebilir.", 
+    "description": "This is the second paragraph on the third onboarding panel."
   }, 
   "btn-allow": {
     "message": "İzin ver", 
@@ -82,6 +126,10 @@
     "message": "Hiç Facebook takipçisi algılanmadı", 
     "description": ""
   }, 
+  "no-trackers-p1": {
+    "message": "Facebook Container bu sayfada herhangi bir Facebook takipçisi bulamadı. Bununla birlikte, sayfada başka takipçi türleri bulunuyor olabilir.", 
+    "description": ""
+  }, 
   "learn-more": {
     "message": "Daha fazla bilgi al", 
     "description": "This is a link that opens a page with more information about Facebook Container."
@@ -93,6 +141,14 @@
   "trackers-detected-subhead": {
     "message": "Sizi Facebook’tan koruduk.", 
     "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+  }, 
+  "trackers-detected-p1": {
+    "message": "Alışveriş sitelerinde, haber sitelerinde ve başka sitelerde karşınıza çıkan Facebook düğmeleri, hangi sayfalarda gezdiğinizi Facebook’a bildiren “takipçiler” içerir. Bu beğeni ve paylaşım düğmelerini hiç kullanmasanız bile takipçiler sizi takip ederek gezintiniz hakkında veri toplayabilir. Facebook Container bu takipçileri engeller.", 
+    "description": ""
+  }, 
+  "trackers-detected-p2": {
+    "message": "Facebook Container bu takipçileri engeller, ama bu düğmelerden herhangi birine tıklarsanız Facebook sizi izleyebilir.", 
+    "description": ""
   }, 
   "trackers-detected-fence-alt": {
     "message": "Kalkanlı Facebook Container çiti.", 
@@ -114,6 +170,9 @@
     "message": "İZİN VERDİĞİNİZ SİTELER", 
     "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   }, 
+  "sites-added-p1": {
+    "message": "Facebook Container, Facebook’a ait siteleri bir kafese hapseder. Başka sitelerin de kafese girmesine izin verebilirsiniz ama bu durumda Facebook, web gezintinizi daha fazla takip edebilir."
+  }, 
   "remove": {
     "message": "Kaldır", 
     "description": ""
@@ -122,8 +181,28 @@
     "message": "Site Facebook Container’dan çıkarılsın mı?", 
     "description": ""
   }, 
+  "remove-site-p1": {
+    "message": "Bu siteyi Facebook Container’dan kaldırırsanız Facebook ile giriş özelliği artık çalışmaz ve Facebook takip çerezleri silinir.", 
+    "description": ""
+  }, 
+  "remove-site-p2": {
+    "message": " Facebook ile giriş özelliğini yeniden kullanmak isterseniz bu siteyi yeniden Facebook Container’a eklemeniz gerekir.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-share": {
+    "message": "Facebook Container bu düğmeyi devre dışı bıraktı ve Facebook’un bu sayfayı ziyaretinizi izlemesini engelledi.", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-button-login": {
+    "message": "Facebook Container, Facebook takipçilerini engelledi. Bu sitede Facebook ile oturum açarsanız Facebook sizi takip edebilir.", 
+    "description": ""
+  }, 
   "inPageUI-tooltip-prompt-p1": {
     "message": "Facebook sizi burada izleyebilsin mi?", 
+    "description": ""
+  }, 
+  "inPageUI-tooltip-prompt-p2": {
+    "message": "Facebook ile oturum açarsanız Facebook bu sitede yaptıklarınızı takip edebilir. Facebook bu sayede internetteki yaşamınıza dair daha fazla bilgi sahibi olabilir.", 
     "description": ""
   }, 
   "inPageUI-tooltip-prompt-checkbox": {
